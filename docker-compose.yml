@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  node:
+    build:
+      context: .
+      dockerfile: _ops/services/node/Dockerfile
+    ports:
+      - "3000:3000"
+    container_name: node_server
